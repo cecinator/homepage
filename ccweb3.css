@@ -1,0 +1,171 @@
+@import url('normalize.css');
+/*hvit på denne siden er #fffafa;*/
+
+/*all items*/
+  *{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+body * {
+	box-sizing: border-box;
+}
+
+
+/*Structure*/
+#wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin: 20px auto;
+	
+}
+#master-grid {
+	max-width: 1200px;
+	margin: 0 auto;
+			
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 120px auto auto 100px;
+	grid-template-areas: 	"header header header header"
+							"intro introbilde introbilde ekstra"
+							"fag innhold innhold innhold"
+							"footer footer footer footer";
+}
+/*header*/			
+header {
+	grid-area: header;
+	background-image:url(./bilder/header.jpg);
+}
+#headerframe{
+	margin-left: 5%;
+}
+/*innhold i alle boksene*/
+div.sectionframe{
+margin: 0 auto;
+padding: 6px;
+}
+/*meny*/
+#meny{
+	grid-area: intro;
+	color: white;
+	background:#f9f4f4;
+}
+/*eksamensdato*/
+#ekstra{
+	grid-area: ekstra;
+	color: white;
+	background: #f9f4f4;
+}
+
+/*forelesningstider*/
+#fag{
+grid-area:fag;
+background: #f9f4f4;
+
+}
+/*bilde på forsiden*/				
+.introbilde{
+grid-area: introbilde;
+width: 100%;
+padding: 5px;
+background:#f9f4f4;
+}
+/*skoleartikler*/
+#artikkelframe {
+grid-area:innhold;
+background: #f9f4f4;
+display:flex;
+padding:5px;
+}
+
+.artikkel{
+justify-content:space-between;
+flex-wrap:wrap;
+background: #f9f4f4;
+flex: 1;
+}
+
+/*footer*/		
+#footer{
+grid-area:footer;
+background: #734b26;
+color: white;
+padding: 2px;
+font-family: 'Lora', serif;
+}
+/*Linker*/
+a{
+    text-decoration: none;
+	color:#734b26;
+}
+a:hover{
+	text-decoration: underline;
+}
+h1 a{
+    text-decoration: none;
+	color:#734b26;
+}
+h1 a:hover{
+font-size: 110%;
+text-decoration: none;
+}
+h4 a{
+    text-decoration: none;
+	color:#9bb8ca;
+}
+h4 a:hover{
+	text-decoration: underline;
+}			
+/*Fonter*/
+h1{
+color: #734b26;
+font-family: 'Julius Sans One', sans-serif;
+font-size:60px;
+}
+h2{
+color: #5b86a6;
+font-family: 'Julius Sans One', sans-serif;
+font-size:30px;
+margin-bottom:5px;
+}
+h3{
+color: #734b26;
+font-family: 'Julius Sans One', sans-serif;
+font-size:20px;
+}
+h4{
+color: #625213;
+font-family: 'Julius Sans One', sans-serif;
+font-size:15px;
+}
+
+p{
+color: #625213;
+font-family: 'Lora', serif;
+font-size:16px;
+}
+
+#overskrift{
+color:#734b26;
+margin-top:5px;
+}
+/*artikkelside spess*/
+table {
+width:80%
+}	
+td{
+	border: 4px solid white;
+	height:70px;
+	padding:2px;
+}
+th{
+	border: 4px solid white;
+	height:50px;
+	width:50%;
+	padding:2px;
+}	
+#maincontent{
+grid-area: hoved;
+background: #f9f4f4;
+padding: 6px;
+}	

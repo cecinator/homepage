@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CCweb</title>
+		<link rel="stylesheet" type="text/css" href="artikkelside.css">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		
+			window.onload = oppstart;
+			
+			function oppstart() {
+				document.getElementById("btnskrivUt").onclick = skrivUt;
+			}
+		
+			function skrivUt (){
+			
+				var innhold = document.getElementById("innhold").value;
+				var antall = document.getElementById("antall").value;
+				
+				for(antall;antall >0; antall--){
+				document.getElementById("utskrift").innerHTML += innhold + "<br/>";
+				} 
+				
+				/*while(antall >0){
+					document.getElementById("utskrift").innerHTML += innhold + "<br/>";
+					antall--;
+
+				}*/
+			}
+
+		</script>
+	
+	</head>
+	<body>
+	<div id="master-grid">
+			<header>
+				<div id="headerframe">	
+					<h1><a href="index.html">CC web</a></h1>
+				</div>
+			</header>
+				<div id="meny">
+					<div class="sectionframe">
+						<h2>Oppgaver i web</h2>
+						<h3><i class="fa fa-angle-right"></i><a href="artikkelside.html"> Om denne siden</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="mathml.html"> MAthML</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="svg.html"> SVG</a></h3><br/>
+					</div>
+				</div>
+				<div id="maincontent">
+					<h4><a href="index.html">Forside</a>/<a href="infprogoblig2.html">Oblig 2 infprog</a>/<a href="oppgave6.html">Oppgave 6</a></h4>
+					<h2> Oppgave 6</h2>
+							<p>Innholdet i denne boksen</p><input id="innhold"></input><br/>
+							<p>Skal skrives ut så mange ganger</p><input id="antall"></input><br/>
+							<p>når denne trykkes </p><button type="button" id="btnskrivUt">Skriv ut</button>
+							<p id="utskrift" ></p>	
+				</div>
+				<div id="fag">
+					<div class="sectionframe">
+						<h3>Timer i webutvikling:</h3><br/>
+						<h4>Mandag: 14.15-16.00</h4><br/>
+						<h4>Onsdag: 12.00-14.00</h4><br/>
+						<h4>Fredag: 09.15-11.00</h4><br/>
+						<h3>Timer i infprog:</h3><br/>
+						<h4>Mandag: 12.15-14.00</h4><br/>
+						<h4>Tirsdag: 08.15-10.00</h4><br/>
+						<h4>Onsdag: 14:15-16.00</h4><br/>
+					</div>
+				</div>
+			
+			<div id="footer">
+			Header: Photo by Paweł Wiśniewski on Unsplash<br/>
+			Front-side picture: Photo by Andrew Coelho on Unsplash<br/>
+			<br/>
+			<h4><a href="artikkelside.html">Om denne siden</a></h4>
+			</div>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>

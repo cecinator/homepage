@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CCweb</title>
+		<link rel="stylesheet" type="text/css" href="artikkelside.css">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">  </script>
+
+	</head>
+	<body>
+	<div id="master-grid">
+			<header>
+				<div id="headerframe">	
+					<h1><a href="index.html">CC web</a></h1>
+				</div>
+			</header>
+				<div id="meny">
+					<div class="sectionframe">
+						<h2>Oppgaver i web</h2>
+						<h3><i class="fa fa-angle-right"></i><a href="artikkelside.html"> Om denne siden</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="mathml.html"> MAthML</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="svg.html"> SVG</a></h3><br/>
+					</div>
+				</div>
+				<div id="maincontent">
+					<h4><a href="index.html">Forside</a>/<b><a href="mathml.html">MathML</a></b></h4>
+					<h2 id="overskrift">MathML</h2>
+						<p>MathML er et Markup language for matematiske formler. <br/>
+						Det er strukturert måte å kode matematiske formler, en kode som blir <br/>
+						lest av nettsiden og viser formlene som de ville blitt vist på papir.<br/>
+						Det er også en praktisk bruk for dem med dårlig syn når man kan lese dem opp. <br/>
+						Det er bedre enn å måtte editere dem i et eget eksternt program, <br/>
+						og derfra måtte  transportere inn i et bildeformat som ikke kan redigeres i koden.</p>
+						<br/>
+						<p>Ettersom det er lesbart for maskiner kan det derfor også søkemotorer,<br/>
+						som gjør det enklere å finne det man evenutelt leter etter av formler.</p>
+						<br/>
+						<p>Det finnes to forskjellige typer:</p>
+						<ul>
+							<li>C-MathML</li>
+							<li>P-MathML</li>
+						<br/>
+						<p><strong>C</strong> står for content, det er forklarende måte å presentere den matematiske formelen,<br/>
+						en slags snakkende måte og viser semantikken i hvordan formelen presenteres.<br/>
+						<strong>P</strong> står for presentation, det er viser heller hvordan selve visningen skal presenteres,<br/>
+						en slags oppramsing. </p>
+							
+						<br/><p>Visningen nedenfor vil bare vises i MathML form i nettlesere som støtter MathML.<br/>
+						Google Chrome er ikke en av dem, det er derimot f.eks. Firefox som jeg anbefaler å se med.<br/>
+						Eksemplene er hentet med kode <a href="http://www.freedomscientific.com/content/html/jawshq/MathML-Samples.html">herfra.</a></p>
+						<br/><p>
+						<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+						<mrow>
+						  <mi>x</mi>
+						  <mo>=</mo>
+						  <mfrac>
+							<mrow>
+							  <mrow>
+								<mo>-</mo>
+								<mi>b</mi>
+							  </mrow>
+							  <mo>&PlusMinus;</mo>
+							  <msqrt>
+								<mrow>
+								  <msup>
+									<mi>b</mi>
+									<mn>2</mn>
+								  </msup>
+								  <mo>-</mo>
+								  <mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+								  </mrow>
+								</mrow>
+							  </msqrt>
+							</mrow>
+							<mrow>
+							  <mn>2</mn>
+							  <mo>&InvisibleTimes;</mo>
+							  <mi>a</mi>
+							</mrow>
+						  </mfrac>
+						</mrow>
+						</math>
+						</p>
+						<br/>
+						<p>
+						<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+						<mrow>
+						  <mi>A</mi>
+						  <mo>=</mo>
+						  <mfenced open="[" close="]">
+							<mtable>
+							  <mtr>
+								 <mtd><mi>x</mi></mtd>
+								 <mtd><mi>y</mi></mtd>
+							  </mtr>
+							  <mtr>
+								 <mtd><mi>z</mi></mtd>
+								 <mtd><mi>w</mi></mtd>
+							  </mtr>
+							</mtable>
+						  </mfenced>
+						</mrow>
+						</math>
+						</p><br/>
+						<p>
+						<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+						<mrow>
+						<semantics>
+						  <mrow>
+							<msubsup>
+							  <mo>&int;</mo>
+							  <mn>1</mn>
+							  <mi>t</mi>
+							</msubsup>
+							<mfrac>
+							  <mrow>
+								<mo>&dd;</mo>
+								<mi>x</mi>
+							  </mrow>
+							  <mi>x</mi>
+							</mfrac>
+						  </mrow>
+						  <annotation-xml encoding="MathML-Content">
+							<apply>
+							  <int/>
+							  <bvar><ci>x</ci></bvar>
+							  <lowlimit><cn>1</cn></lowlimit>
+							  <uplimit><ci>t</ci></uplimit>
+							  <apply>
+								<divide/>
+								<cn>1</cn>
+								<ci>x</ci>
+							  </apply>
+							</apply>
+						  </annotation-xml>
+						</semantics>
+						</mrow>
+						</math>
+						</p>
+
+
+				</div>
+				<div id="fag">
+					<div class="sectionframe">
+						<h3>Timer i webutvikling:</h3><br/>
+						<h4>Mandag: 14.15-16.00</h4><br/>
+						<h4>Onsdag: 12.00-14.00</h4><br/>
+						<h4>Fredag: 09.15-11.00</h4><br/>
+						<h3>Timer i infprog:</h3><br/>
+						<h4>Mandag: 12.15-14.00</h4><br/>
+						<h4>Tirsdag: 08.15-10.00</h4><br/>
+						<h4>Onsdag: 14:15-16.00</h4><br/>
+					</div>
+				</div>
+			
+			<div id="footer">
+			Header: Photo by Paweł Wiśniewski on Unsplash<br/>
+			Front-side picture: Photo by Andrew Coelho on Unsplash<br/>
+			<br/>
+			<h4><a href="artikkelside.html">Om denne siden</a></h4>
+			</div>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>

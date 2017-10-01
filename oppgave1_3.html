@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CCweb</title>
+		<link rel="stylesheet" type="text/css" href="artikkelside.css">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		
+		window.onload = oppstart;
+		
+		function oppstart() {
+			document.getElementById("btnRegistrer").onclick = sjekk;
+		}
+		
+		//Dette er oppgave 1 og 2
+		
+		function sjekk(){
+			var brukernavn = document.getElementById("txtBrukernavn").value
+			var passord = document.getElementById("pswPassord").value
+			var bekreftelse = document.getElementById("pswBekreftelse").value
+			var fodselsaar = document.getElementById("txtAar").value
+			var fodselsmnd = document.getElementById("txtMnd").value
+			var fodselsdag = document.getElementById("txtDag").value
+			var aar = new Date().getFullYear();
+			var mnd = new Date().getMonth()+1;
+			var dag = new Date().getDate();
+			
+
+			
+			//Her sjekker jeg om det ligger noe verdi inni brukernavn
+			if (brukernavn === ""){
+				alert("Du har ikke skrevet inn brukernavn")
+			}
+			//Her sjekker jeg om det ligger noe verdi inni passord
+			else if (passord === ""){
+				alert("Du har ikke skrevet inn passord")
+			}
+			//Her sjekker jeg om det ligger noe verdi inni bekreftelsen
+			else if (bekreftelse === ""){
+				alert("Du må bekrefte passordet")
+			}
+			//Her sjekker jeg om passordet er lengre enn 5 bokstaver
+			else if (passord.length <5){
+				alert("Passordet må bestå av minst 5 tegn")
+			}
+			//Her sjekker jeg om passordet er det samme som bekreftelsen
+			else if (passord != bekreftelse){	
+				alert("Passordene du skrev inn er ikke like")
+			}
+			else if (aar - fodselsaar < 18){
+				alert("Du er for ung")
+			}
+			else if (mnd - fodselsmnd >=0 && dag - fodselsdag <0){
+				alert("Du er for ung")
+			}
+			//Denne meldingen sendes ut dersom alt er som det skal 
+			else {
+				alert("Takk for din registrering")
+			}
+		}
+		</script>
+	
+	</head>
+	<body>
+	<div id="master-grid">
+			<header>
+				<div id="headerframe">	
+					<h1><a href="index.html">CC web</a></h1>
+				</div>
+			</header>
+				<div id="meny">
+					<div class="sectionframe">
+						<h2>Oppgaver i web</h2>
+						<h3><i class="fa fa-angle-right"></i><a href="artikkelside.html"> Om denne siden</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="mathml.html"> MAthML</a></h3><br/>
+						<h3><i class="fa fa-angle-right"></i><a href="svg.html"> SVG</a></h3><br/>
+					</div>
+				</div>
+				<div id="maincontent">
+					<h4><a href="index.html">Forside</a>/<a href="infprogoblig2.html">Oblig 2 infprog</a>/<a href="oppgave1_3.html">Oppgave 1-3 </a></h4>
+					<h2> Oppgave 1, 2 og 3 </h2>
+						<p><input id="txtBrukernavn" type="text" placeholder="Skriv inn brukernavn" /><br/>
+						<br/>
+						<input id="pswPassord" type="password" placeholder="Skriv inn passord"/>
+						<br/>
+						<br/>
+						<input id="pswBekreftelse" type="password" placeholder="Bekreft passord"/>
+						<br/>
+						
+						Fødselsdato: <br/>
+						<input id="txtAar" type="text" placeholder="År" />
+						<br/>
+						<input id="txtMnd" type="text" placeholder="Måned" />
+						<br/>
+						<input id="txtDag" type="text" placeholder="Dag" />
+						<br/>
+						<button type="button" id="btnRegistrer">Registrer</button>
+						<br/>	
+				</div>
+				<div id="fag">
+					<div class="sectionframe">
+						<h3>Timer i webutvikling:</h3><br/>
+						<h4>Mandag: 14.15-16.00</h4><br/>
+						<h4>Onsdag: 12.00-14.00</h4><br/>
+						<h4>Fredag: 09.15-11.00</h4><br/>
+						<h3>Timer i infprog:</h3><br/>
+						<h4>Mandag: 12.15-14.00</h4><br/>
+						<h4>Tirsdag: 08.15-10.00</h4><br/>
+						<h4>Onsdag: 14:15-16.00</h4><br/>
+					</div>
+				</div>
+			
+			<div id="footer">
+			Header: Photo by Paweł Wiśniewski on Unsplash<br/>
+			Front-side picture: Photo by Andrew Coelho on Unsplash<br/>
+			<br/>
+			<h4><a href="artikkelside.html">Om denne siden</a></h4>
+			</div>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>
