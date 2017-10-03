@@ -23,16 +23,20 @@
         var hoyde = document.getElementById("txtHoyde").value;
         var kjonn = document.getElementById("lstKjonn").value; 
 		var navnelengde = navn.length;
-
+				
+			//Om man velger mann er det denne regelen som gjelder	
 			if (kjonn.value = "mann"){
 			  spaadom = navnelengde * alder - hoyde;
 			}
+			//Om man er noe annet enn mann, i dette tilfelle bare en kvinne, gjelder denne regelen
 			else {
 			  spaadom = alder * hoyde - 3;
 			}
+			//Hvis spådommen, som er en lagret variabel, er delelig med 2 - altså er partall - skal denne meldingen sendes ut
 			if (spaadom % 2 === 0){ 
 			  alert("Det vil gå deg godt her i verden... For at spådommen skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345")
 			}
+			//Om det ikke er et partall, skal dette skrives ut
 			else {
 			  alert("Stakkars deg! Alt kommer til å gå deg galt...For at spådommen ikke skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345")
 			}
@@ -62,7 +66,7 @@
 					<div class="sectionframe">
 						<h3>Timer i webutvikling:</h3><br/>
 						<h4>Mandag: 14.15-16.00</h4><br/>
-						<h4>Onsdag: 12.00-14.00</h4><br/>
+						<h4>Onsdag: 12.15-14.00</h4><br/>
 						<h4>Fredag: 09.15-11.00</h4><br/>
 						<h3>Timer i infprog:</h3><br/>
 						<h4>Mandag: 12.15-14.00</h4><br/>
@@ -89,10 +93,11 @@
 				</div>
 			</main>
 			<footer id="footer">
-			Header: Photo by Paweł Wiśniewski on Unsplash<br/>
-			Front-side picture: Photo by Andrew Coelho on Unsplash<br/>
-			<br/>
-			<h4><a href="artikkelside.html">Om denne siden</a></h4>
+				<br/>
+				<p class="footerfont"><a href="omdennesiden.html">Om denne siden</a></h4>
+				<p class="footerfont">Header: Photo by Paweł Wiśniewski on <a href="https://unsplash.com/photos/pkFXc2d3yD4">Unsplash</a>. Frontside picture: Photo by Andrew Coelho on <a href="https://unsplash.com/photos/ZgzPkzJtvYU">Unsplash</a></p>
+				<p class="footerfont">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+				<p class="footerfont">Made with a lot of help from <a href="https://www.w3schools.com/">W3School</a></p>
 			</footer>
 		</div>
 	</body>

@@ -11,9 +11,12 @@
 	<script>
 		
       window.onload = oppstart;
+	  
+	  //Her henter jeg tidspunkt på dagen
       var tid = new Date();
       var timer = tid.getHours();
 
+	//Her sjekker jeg om klokken er mellom (eller lik) tidspunkt 1 og 2, meldingen og bildet inni bestemmes av tiden hentet ovenifra
       function oppstart() {
         if (timer >= 5 && timer < 10) {
           document.getElementById("utskrift").innerHTML = "God morgen"
@@ -62,7 +65,7 @@
 					<div class="sectionframe">
 						<h3>Timer i webutvikling:</h3><br/>
 						<h4>Mandag: 14.15-16.00</h4><br/>
-						<h4>Onsdag: 12.00-14.00</h4><br/>
+						<h4>Onsdag: 12.15-14.00</h4><br/>
 						<h4>Fredag: 09.15-11.00</h4><br/>
 						<h3>Timer i infprog:</h3><br/>
 						<h4>Mandag: 12.15-14.00</h4><br/>
@@ -81,10 +84,11 @@
 					</div>
 			</main>
 			<footer id="footer">
-				Header: Photo by Paweł Wiśniewski on Unsplash<br/>
-				Front-side picture: Photo by Andrew Coelho on Unsplash<br/>
 				<br/>
-				<h4><a href="artikkelside.html">Om denne siden</a></h4>
+				<p class="footerfont"><a href="omdennesiden.html">Om denne siden</a></h4>
+				<p class="footerfont">Header: Photo by Paweł Wiśniewski on <a href="https://unsplash.com/photos/pkFXc2d3yD4">Unsplash</a>. Frontside picture: Photo by Andrew Coelho on <a href="https://unsplash.com/photos/ZgzPkzJtvYU">Unsplash</a></p>
+				<p class="footerfont">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+				<p class="footerfont">Made with a lot of help from <a href="https://www.w3schools.com/">W3School</a>. Fonts from <a href="https://fonts.google.com/">Google Font</a>. Icons from <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">Font-Awesome</a>.</p>
 			</footer>
 		</div>
 	</body>
