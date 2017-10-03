@@ -90,7 +90,6 @@ main {
 	flex-wrap:wrap;
 	background: #f9f4f4;
 	flex: 1;
-
 	
 }
 
@@ -135,7 +134,7 @@ h4 a:hover{
 h4 a:visited{
 	color: #6995b0;
 }
-h4 a:active{
+h4 a:a:active{
 	font-size:110%
 }
 	
